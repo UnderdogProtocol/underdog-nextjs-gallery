@@ -1,10 +1,6 @@
-import axios from "axios";
+import { underdogClient } from "@/lib/underdog";
 import crypto from "crypto";
 import { NextApiRequest, NextApiResponse } from "next";
-
-const productIdToProjectId: Record<string, number> = {
-  product_6ce985887360493598c7a5be2a1cfb0a: 2,
-};
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const signature = crypto
@@ -17,26 +13,15 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   if (req.method === "POST") {
-    const projectId =
-      productIdToProjectId[
-        req.body.data.payment.paymentLink.lineItems[0].price.product.id
-      ];
+    const projectId = req.body.data.payment.paymentLink.lineItems[0].price.product.meta.projectId;
 
     if (projectId) {
       const receiverAddress = req.body.data.payment.customer.solanaPubKey;
 
-      const options = {
-        method: "POST",
-        url: "https://api.underdogprotocol.com/v2/projects/2/sfts",
-        headers: {
-          accept: "application/json",
-          "content-type": "application/json",
-          authorization: `Bearer ${process.env.UNDERDOG_API_KEY}`,
-        },
-        data: { receiverAddress },
-      };
-
-      await axios.request(options);
+      await underdogClient.createSft({
+        params: { projectId },
+        body: { receiverAddress },
+      });
 
       return res.status(200).json({ message: "OK" });
     }

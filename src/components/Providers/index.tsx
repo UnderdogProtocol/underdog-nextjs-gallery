@@ -1,9 +1,15 @@
-import { UnderdogProvider } from "@underdog-protocol/js";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 type ProvidersProps = {
   children: React.ReactNode;
 };
 
+const queryClient = new QueryClient();
+
 export function Providers({ children }: ProvidersProps) {
-  return <UnderdogProvider>{children}</UnderdogProvider>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      {children}
+    </QueryClientProvider>
+  );
 }
