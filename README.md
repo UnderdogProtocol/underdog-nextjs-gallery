@@ -1,7 +1,5 @@
 # Underdog Gallery
 
-This is a Next.js starter
-
 ## Quick Start
 
 1. Install dependencies
