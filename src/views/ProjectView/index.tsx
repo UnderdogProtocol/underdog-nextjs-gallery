@@ -41,7 +41,7 @@ export function ProjectView() {
 
       <Container className="py-16">
         <div className="grid grid-cols-2 gap-8">
-          <div>
+          <div className="space-y-4">
             <div className="space-y-2">
               <Header title={data.name} size="4xl" />
               <PublicKeyLink publicKey={data.mintAddress} showExplorer network={process.env.NEXT_PUBLIC_NETWORK as NetworkEnum} />
@@ -51,7 +51,7 @@ export function ProjectView() {
               <Header
                 title="Description"
                 description={data.description}
-                size="4xl"
+                size="3xl"
               />
             )}
           </div>
