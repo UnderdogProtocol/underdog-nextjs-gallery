@@ -16,6 +16,34 @@ yarn dev
 
 3. Open [http://localhost:3000](http://localhost:3000)
 
+## Webhook Setup
+
+You can run the setup script to automatically generate webhooks on both Underdog and Sphere.
+
+```
+yarn run setup
+```
+
+Note: you'll need to have your Underdog API key and Sphere API key, set your network, and set the app URL in your environment variables.
+
+Otherwise, you can use the interface to manually create webhooks.
+
+### Underdog
+
+1. Go to [https://app.underdogprotocol.com/webhooks](https://app.underdogprotocol.com/webhooks)
+
+2. Click **Add Webhook**
+
+3. Set URL to `${APP_URL}/api/underdog/webhooks` and select `project.create`
+
+### Sphere
+
+1. Go to [https://spherepay.co/dashboard/developers/webhooks](https://spherepay.co/dashboard/developers/webhooks)
+
+2. Click **Create Webhook**
+
+3. Set URL to `${APP_URL}/api/sphere/webhooks` and select `Payment Successful`
+
 ## Environment Variables
 
 ### Configuration
