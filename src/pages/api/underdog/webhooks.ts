@@ -15,7 +15,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       query: {
         page: 1,
         limit: 0,
-        orderBy: "asc",
+        order: "asc",
         sortBy: undefined,
       },
     });
