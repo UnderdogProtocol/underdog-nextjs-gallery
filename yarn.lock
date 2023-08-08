@@ -1511,23 +1511,23 @@
   dependencies:
     "@types/node" "*"
 
-"@underdog-protocol/js@0.6.5":
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/@underdog-protocol/js/-/js-0.6.5.tgz#965d700ebe2d1e97a04964438beffe9e4f7c40ce"
-  integrity sha512-t2UO4GpB0pylrEV2445EL3lKgo+qJUpa8hCy1+jP9QP0c5+hcxM+fX4rjDnjqVaszACHaI3e9evYf2kwvAKocg==
+"@underdog-protocol/js@0.6.6":
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/@underdog-protocol/js/-/js-0.6.6.tgz#e96c1a519f8990c35419593165538b02181662cb"
+  integrity sha512-jdvJneLoBz2rYX45R5G6nyhjAtsoMOY/qX/wYFFm7MSRhAc7TDo3+z6hQHrsrl/OGqiQPDhYn3e12dAgQ6LNTA==
   dependencies:
     "@tanstack/react-query" "4.29.5"
-    "@underdog-protocol/types" "0.5.14"
+    "@underdog-protocol/types" "0.5.15"
     axios "^1.3.6"
     next "^13.3.4"
     react "^18.2.0"
     react-dom "^18.2.0"
     zod "^3.21.4"
 
-"@underdog-protocol/types@0.5.14":
-  version "0.5.14"
-  resolved "https://registry.yarnpkg.com/@underdog-protocol/types/-/types-0.5.14.tgz#b2995fbea94fddcf30bf71c5b4fbc665287701d9"
-  integrity sha512-i6dsFHYQMdrCToMsyX/s0af2eHOqkQbgCxQuI15JVOUPTO3rMDIVPvUeJ0KAEKgzwKc62W/x25UzGzskC90Fzg==
+"@underdog-protocol/types@0.5.15":
+  version "0.5.15"
+  resolved "https://registry.yarnpkg.com/@underdog-protocol/types/-/types-0.5.15.tgz#22a89401d2b95ae73ebd14a9e2c023e34f3ff7ca"
+  integrity sha512-N9mOIswBbW37CU07U9zH6fWdzeSpQ4NnDg2zArYE0zuNBK9ANT1QVjbFJhU5CckzpmTy8ugmJRt7l48arZR8CA==
   dependencies:
     "@asteasolutions/zod-to-openapi" "^4.6.0"
     "@solana/web3.js" "^1.73.2"

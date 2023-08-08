@@ -15,7 +15,7 @@
     "@solana/wallet-adapter-react-ui": "^0.9.31",
     "@solana/wallet-adapter-wallets": "^0.19.16",
     "@solana/web3.js": "^1.75.0",
-    "@underdog-protocol/js": "0.6.5",
+    "@underdog-protocol/js": "0.6.6",
     "@underdog-protocol/types": "^0.5.13",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",

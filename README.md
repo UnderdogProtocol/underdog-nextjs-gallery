@@ -46,8 +46,6 @@ Otherwise, you can use the interface to manually create webhooks.
 
 ## Environment Variables
 
-### Configuration
-
 | Variable | Description | Example
 | --- | --- | --- |
 | `APP_URL` | The URL of the app used to redirect after a successful payment on the Sphere checkout page | [https://gallery.underdogprotocol.com](https://gallery.underdogprotocol.com) |
