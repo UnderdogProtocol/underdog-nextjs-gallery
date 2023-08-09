@@ -20,7 +20,7 @@ export function ProjectView() {
 
   const { data } = useProject({
     params: { projectId },
-    query: { limit: 10, page: 1, orderBy: "asc" },
+    query: { limit: 10, page: 1 },
   });
 
   if (!data) return <LoadingPage />;
@@ -44,7 +44,11 @@ export function ProjectView() {
           <div className="space-y-4">
             <div className="space-y-2">
               <Header title={data.name} size="4xl" />
-              <PublicKeyLink publicKey={data.mintAddress} showExplorer network={process.env.NEXT_PUBLIC_NETWORK as NetworkEnum} />
+              <PublicKeyLink
+                publicKey={data.mintAddress}
+                showExplorer
+                network={process.env.NEXT_PUBLIC_NETWORK as NetworkEnum}
+              />
             </div>
 
             {data.description && (
@@ -85,7 +89,6 @@ export function ProjectView() {
               </div>
             )}
           </div>
-
         </div>
       </Container>
     </div>
