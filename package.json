@@ -16,7 +16,7 @@
     "@solana/wallet-adapter-wallets": "^0.19.16",
     "@solana/web3.js": "^1.75.0",
     "@underdog-protocol/js": "0.6.6",
-    "@underdog-protocol/types": "^0.5.13",
+    "@underdog-protocol/types": "^0.5.18",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
     "clsx": "^2.0.0",
