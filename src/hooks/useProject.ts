@@ -1,7 +1,7 @@
 import {
   GetProjectRequest,
   GetProjectResponse,
-} from "@underdog-protocol/types";
+} from "@underdog-protocol/js";
 import axios, { AxiosError } from "axios";
 import { useQuery } from "react-query";
 

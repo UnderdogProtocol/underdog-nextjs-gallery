@@ -1,3 +1,6 @@
+/* Import fonts from the cloud bucket */
+@import url('https://storage.googleapis.com/underdog-protocol/fonts/fonts.css');
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
   display: none;
@@ -7,69 +10,6 @@
 * {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-}
-
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/fonts/Aeonik/Aeonik-BoldItalic.woff2') format('woff2'),
-      url('/fonts/Aeonik/Aeonik-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/fonts/Aeonik/Aeonik-Bold.woff2') format('woff2'),
-      url('/fonts/Aeonik/Aeonik-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/fonts/Aeonik/Aeonik-BlackItalic.woff2') format('woff2'),
-      url('/fonts/Aeonik/Aeonik-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/fonts/Aeonik/Aeonik-RegularItalic.woff2') format('woff2'),
-      url('/fonts/Aeonik/Aeonik-RegularItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/fonts/Aeonik/Aeonik-LightItalic.woff2') format('woff2'),
-      url('/fonts/Aeonik/Aeonik-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/fonts/Aeonik/Aeonik-Light.woff2') format('woff2'),
-      url('/fonts/Aeonik/Aeonik-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Aeonik';
-  src: url('/fonts/Aeonik/Aeonik-Regular.woff2') format('woff2'),
-      url('/fonts/Aeonik/Aeonik-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
 
 @tailwind base;

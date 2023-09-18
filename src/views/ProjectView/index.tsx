@@ -5,7 +5,7 @@ import { LoadingPage } from "@/components/LoadingPage";
 import { Header } from "@/components/MediaObject/Header";
 import { PublicKeyLink } from "@/components/PublicKeyLink";
 import { useProject } from "@/hooks/useProject";
-import { NetworkEnum } from "@underdog-protocol/types";
+import { NetworkEnum } from "@underdog-protocol/js";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMemo } from "react";

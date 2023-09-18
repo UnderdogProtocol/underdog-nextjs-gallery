@@ -3,7 +3,7 @@ import axios from "axios";
 import dotenv from "dotenv";
 import path from "path";
 
-import { NetworkEnum, TransactionTypesEnum } from "@underdog-protocol/types";
+import { NetworkEnum, TransactionTypesEnum } from "@underdog-protocol/js";
 import { createUnderdogClient } from "@underdog-protocol/js";
 
 const envPath = path.join(__dirname, "../.env.local");
