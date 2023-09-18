@@ -32,7 +32,7 @@ export function PublicKeyLink({
           className="flex-shrink-0"
         >
           <img
-            src={}
+            src="https://storage.googleapis.com/underdog-protocol/logos/solana/icon.svg"
             className="h-5 w-5"
             alt="solana"
           />
@@ -41,7 +41,7 @@ export function PublicKeyLink({
       {showXray && (
         <button onClick={() => openOnXray(publicKey)} className="flex-shrink-0">
           <img
-            src=""
+            src="https://storage.googleapis.com/underdog-protocol/logos/xray/icon.jpeg"
             className={sizeToDimensionsClassName["xs"]}
             alt="solana"
           />
