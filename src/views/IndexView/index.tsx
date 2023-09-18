@@ -1,37 +1,19 @@
 import { Container } from "@/components/Container";
 import { Input } from "@/components/Input";
-import { LoadingPage } from "@/components/LoadingPage";
 import { Header } from "@/components/MediaObject/Header";
 import { Spin } from "@/components/Spin";
 import { useProjects } from "@/hooks/useProjects";
-import { useProjectsSearch } from "@/hooks/useProjectsSearch";
 import Link from "next/link";
 import { useState } from "react";
 
 export const IndexView: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const { data, isLoading } = useProjectsSearch({
-    query: {
-      page: 1,
-      limit: 20,
-      query: `name~"${searchTerm}" OR description~"${searchTerm}"`,
-      sortBy: "id",
-      order: "desc",
-    },
-  });
+  const { data, isLoading } = useProjects({ query: { page: 1, limit: 20 } });
 
   return (
     <Container size="2xl" className="pt-8 space-y-8">
       <Header
         title={process.env.NEXT_PUBLIC_APP_NAME || "My Gallery"}
         size="5xl"
-      />
-
-      <Input
-        placeholder="Search"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm((e.target as any).value as string)}
       />
 
       {!data || isLoading ? (
