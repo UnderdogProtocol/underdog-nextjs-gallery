@@ -1,10 +1,8 @@
 import { Container } from "@/components/Container";
-import { Input } from "@/components/Input";
 import { Header } from "@/components/MediaObject/Header";
 import { Spin } from "@/components/Spin";
 import { useProjects } from "@/hooks/useProjects";
 import Link from "next/link";
-import { useState } from "react";
 
 export const IndexView: React.FC = () => {
   const { data, isLoading } = useProjects({ query: { page: 1, limit: 20 } });
