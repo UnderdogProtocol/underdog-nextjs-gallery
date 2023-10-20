@@ -44,6 +44,24 @@ Otherwise, you can use the interface to manually create webhooks.
 
 3. Set URL to `${APP_URL}/api/sphere/webhooks` and select `Payment Successful`
 
+4. Create a Product on Sphere associated with your Underdog Project
+
+5. Click `Details`, (not `Edit`), from your Sphere dashboard, add `projectId` metadata field.
+
+![projectId](https://cdn.discordapp.com/attachments/1051281685234327613/1164917448798130186/projectIf.png?ex=6544f4ea&is=65327fea&hm=2bf0c871efbd9d27d9d1e5c67aea29473b946779009ede15b57b8b3191c1d34d&)
+
+If your project on Underdog is `1`, set this value to `1`, etc.
+
+## Select Single or Batch Webhook
+
+Navigate to the `/src/pages/api/sphere/` directory. Select an option:
+
+  If you want to allow users to mint multiple collectibles at once-
+  - Rename `batch.webhooks.ts` to `webhooks.ts`
+
+  If you want to allow users to mint 1 at a time:
+  - Rename `create.webhooks.ts` to `webhook.ts`
+
 ## Environment Variables
 
 | Variable | Description | Example
